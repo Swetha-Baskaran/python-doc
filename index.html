@@ -1,0 +1,916 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python | doc</title>
+    <link rel="stylesheet" type="text/css" href="tech d.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:wght@300&display=swap');      
+
+
+body,
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            transition: 3s;
+        }
+        
+        #content .all {
+            display: flex;
+        }
+        
+        ol li {
+            list-style-type: none;
+            padding-bottom: 1%;
+            margin: 0;
+            border-bottom: 1px solid gray;
+            padding-top: 0%;
+            width: 108%;
+        }
+        
+        header nav {
+            background-color: seagreen;
+            color: white;
+        }
+        
+        footer nav {
+            background-color: seagreen;
+            color: white;
+        }
+        
+        .doc {
+            padding-left: 3%;
+            padding-right: 2%;
+            border-left: 2px solid gray;
+            margin-left: 22%;
+            margin-top: -2%;
+         font-family: 'Lato', sans-serif;
+            overflow-y: visible;
+        }
+        
+        .doc .col {
+            padding-top: 2%;
+        }
+        
+        .title {
+            height: 0%;
+            margin-bottom: 0;
+            padding: 1% 0%;
+            padding-left: 10%;
+            padding-top: 0%;
+            font-family: system-ui;
+            text-transform: capitalize;
+            transform: translate(42px, 3px);
+        }
+        
+        #synopsis {
+            text-align: center;
+            width: 113%;
+            text-transform: capitalize;
+        }
+        
+        .title-2 {
+            height: 0%;
+            margin-bottom: 0;
+            padding: 0% 0%;
+            padding-left: 10%;
+            padding-top: 0%;
+            text-transform: capitalize;
+        }
+        
+        .doc h1 {
+            text-transform: capitalize;
+            color: seagreen;
+            margin-top: 7%;
+        }
+        
+        .doc h2 {
+            text-transform: capitalize;
+            font-size: larger;
+        }
+        
+        .doc h4 {
+            font-size: larger;
+            text-transform: capitalize;
+        }
+        
+        .ddiv {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transform: translateY(-20px);
+        }
+        
+        .ddiv-1 {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            transform: translateY(-0px);
+        }
+        
+        .full {
+            margin-bottom: 6%;
+            margin-top: 0%;
+        }
+        
+        li a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            cursor: pointer;
+            padding: 2% 0%;
+            list-style-type: none;
+        }
+        
+        a li {
+            list-style-type: none;
+            padding-left: 6%;
+        }
+        
+        a {
+            list-style-type: none;
+            font-size: initial;
+            color: darkgreen;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding-left: 0.5%;
+        }
+        
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .list ol {
+            position: fixed;
+            height: 100%;
+            width: 9%;
+            padding: 0% 0% 0% 0%;
+            width: 19.5%;
+        }
+        
+        ol li:hover {
+            background: #00ff0a2b;
+        }
+        
+        ol li:active {
+            background: #00ff0a2b;
+        }
+        
+        #variableandoperators~#icon-arrow {
+            display: block;
+        }
+        
+        .code {
+            background: #eeffcc;
+            border: 2px solid;
+            border-radius: 3px;
+            border: 1px solid #ac9;
+            padding: 2%;
+            margin-right: 2%;
+        }
+        
+        @media (max-width:954px) {
+            ol li {
+                list-style-type: none;
+                padding-bottom: 1%;
+                margin: 0;
+                border-bottom: 1px solid gray;
+                padding-top: 2%;
+            }
+            .list ol {
+                position: fixed;
+                height: 100%;
+                width: 9%;
+                padding: 0% 3% 0% 3%;
+                width: max-content;
+            }
+        }
+        
+        @media (max-width:973px) {
+            #synopsis {
+                text-align: left;
+                text-transform: capitalize;
+                background-color: #d4fdd5;
+            }
+            #content .all {
+                display:block;
+                flex-direction: column;
+            }
+            .list ol {
+                position: absolute;
+                width: 100%;
+                height: 23%;
+                padding: 0% 0% 0% 0%;
+                /* height: 14%; */
+                background-color: white;
+                overflow-y: auto;
+          
+                transform: translateY(-96px);
+            }
+          .title {
+    height: 0%;
+    margin-bottom: 0;
+    padding: 3% 0%;
+    padding-left: 10%;
+    padding-top: 0%;
+    font-family: system-ui;
+    text-transform: capitalize;
+    transform: translate(41px, 4px);
+    font-size: 21px;
+    z-index: 1111111;
+}
+            ol li {
+                list-style-type: none;
+                padding-bottom: 1%;
+                margin: 0;
+                padding-top: 2%;
+                padding-left: 15%;
+            }
+            .doc {
+                padding-left: 4%;
+                margin-left: 2%;
+                overflow-y: visible;
+                margin-top: 115px;
+                border-left: 2px solid white;
+            }
+            a {
+                list-style-type: none;
+                font-size: initial;
+                color: darkgreen;
+                text-decoration: none;
+                text-transform: capitalize;
+                padding-left: 0%;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .doc h1 {
+                text-transform: capitalize;
+                color: seagreen;
+                margin-top: 5%;
+            }
+            #last-para {
+                margin-bottom: -5%;
+            }
+            .title {
+                height: 0%;
+                margin-bottom: 0;
+                padding: 1% 0%;
+                padding-left: 10%;
+                padding-top: 0%;
+                font-family: system-ui;
+                text-transform: capitalize;
+                transform: translate(42px, -1px);
+                z-index: 1111111;
+            }
+        }
+@media (max-width:730px){
+   .doc h1 {
+                text-transform: capitalize;
+                color: seagreen;
+                margin-top: 12%;
+            }
+  
+            #last-para {
+                margin-bottom: -4%;
+            }
+}
+        @media (max-width:400px) {
+           .doc h1 {
+                text-transform: capitalize;
+                color: seagreen;
+                margin-top: 30%;
+            }
+         
+            #last-para {
+                margin-bottom: -12%;
+            }
+          
+            .title {
+            
+                height: 0%;
+                margin-bottom: 0;
+                padding: 3% 0%;
+                padding-left: 10%;
+                padding-top: 0%;
+                font-family: system-ui;
+                text-transform: capitalize;
+                transform: translate(41px, 4px);
+                font-size: 21px;
+                z-index: 1;
+            }
+        }
+
+@media (max-width:260px){
+  #int{
+    margin-top:27%;
+  }
+}
+
+@media (max-width:230px){
+  #int{
+    margin-top:37%;
+  }
+}
+  </style>
+</head>
+
+<body>
+    <main id="main-doc">
+        <div class="full">
+
+            <div class="ddiv">
+                <header class="topic">
+                    <nav class="navigate">
+
+                        <h1 class="title">python documentation</h1>
+
+                    </nav>
+                </header>
+            </div>
+
+
+        </div>
+        <div class="main-block">
+            <div class="magic">
+
+                <section id="content" class="main-section">
+                    <div class="all">
+                        <nav id="navbar">
+                            <div class="row list">
+                                <ol>
+                                    <li id="synopsis">
+                                        <header>
+                                            synopsis
+                                        </header>
+                                    </li>
+                                    <a href="#introduction" class="nav-link">
+                                        <li>introduction
+                                        </li>
+                                    </a>
+
+                                    <a href="#informal-intro" class="nav-link">
+                                        <li>
+                                            informal introduction
+                                        </li>
+                                    </a>
+                                    <a href="#Using-Python-as-a-Calculator" class="nav-link">
+                                        <li>
+                                            Using Python as a Calculator
+                                        </li>
+                                    </a>
+                                    <a href="#controls" class="nav-link">
+                                        <li>
+                                            control flow tools
+                                        </li>
+                                    </a>
+                                    <a href="#python functions" class="nav-link">
+                                        <li>
+
+                                            python functions
+                                        </li>
+                                    </a>
+                                    <a href="#strings-and-string-manipulation" class="nav-link">
+                                        <li>
+                                            strings and string manipulation
+                                        </li>
+                                    </a>
+                                    <a href="#coding-style" class="nav-link">
+                                        <li>
+                                            Intermezzo: Coding Style
+                                        </li>
+                                    </a>
+                                    <a href="#example programs" class="nav-link">
+                                        <li>
+                                            example programs
+                                        </li>
+                                    </a>
+                                    <a href="#references" class="nav-link">
+                                        <li>
+                                            references
+                                        </li>
+                                    </a>
+                                </ol>
+
+
+
+
+                        </nav>
+
+                        </div>
+                </section>
+                </div>
+                <div class="magic">
+                    <div class="row doc">
+                        <section id="content" class="main-section">
+                            <div class="col" id="introduction">
+
+                                <h1 id="int">introduction</h1>
+
+                                <p class="para">
+                                    Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature,
+                                    make it an ideal language for scripting and rapid application development in many areas on most platforms.
+                                </p>
+                                <p class="para">The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The same
+                                    site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+                                <p class="para">The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+
+
+                                
+
+
+                                <p class="para" id="last-para">This tutorial does not attempt to be comprehensive and cover every single feature, or even every commonly used feature. Instead, it introduces many of Python’s most noteworthy features, and will give you a good idea of
+                                    the language’s flavor and style. After reading it, you will be able to read and write Python modules and programs, and you will be ready to learn more about the various Python library modules described in The Python
+                                    Standard Library.
+                                </p>
+
+
+
+
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+                            <div class="col" id="informal-intro">
+
+                                <h1>An Informal Introduction to Python</h1>
+
+                                <p class="para">In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not
+                                    begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.</p>
+                                <p class="para">Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear
+                                    at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted
+                                    by Python, they may be omitted when typing in examples.</p>
+                                <p class="para">some examples : </p>
+                                <div class="code" id="last-para"><code># this is the first comment
+                        spam = 1  <br># and this is the second comment<br>
+                                  # ... and now a third!<br>
+                        text = "# This is not a comment because it's inside quotes."</code>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+                            <div class="col" id="Using-Python-as-a-Calculator">
+
+                                <h1>Using Python as a Calculator</h1>
+
+                                <p class="para" id="last-para">Let’s try some simple Python commands. Start the interpreter and wait for the primary prompt, >>>. (It shouldn’t take long.)</p>
+                                <h1>Numbers</h1>
+
+                                <p class="para">The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example,
+                                    Pascal or C); parentheses (()) can be used for grouping. For example:</p>
+                                <div class="code"><code>>>> 2 + 2<br>
+                    4<br>
+                    >>> 50 - 5*6<br>
+                    20<br>
+                    >>> (50 - 5*6) / 4<br>
+                    5.0<br>
+                    >>> 8 / 5  # division always returns a floating point number<br>
+                    1.6</code></div>
+
+
+                                <p class="para">The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. We will see more about numeric types later in the tutorial.</p>
+                                <p class="para">Division (/) always returns a float. To do floor division and get an integer result (discarding any fractional result) you can use the // operator; to calculate the remainder you can use %:</p>
+                                <div class="code"><code>>>> 17 / 3  # classic division returns a float<br>
+                    5.666666666666667<br>
+                    >>><br>
+                    >>> 17 // 3  # floor division discards the fractional part<br>
+                    5<br>
+                    >>> 17 % 3  # the % operator returns the remainder of the division<br>
+                    2<br>
+                    >>> 5 * 3 + 2  # result * divisor + remainder<br>
+                    17</code>
+                                </div>
+
+                                <p class="para">With Python, it is possible to use the ** operator to calculate powers 1:</p>
+                                <div class="code"><code>>>> 5 ** 2  # 5 squared<br>
+                    25<br>
+                    >>> 2 ** 7  # 2 to the power of 7<br>
+                    128</code></div>
+                                <p class="para">The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:</p>
+                                <div class="code"><code>>>> width = 20<br>
+                        >>> height = 5 * 9<br>
+                        >>> width * height<br>
+                        900</code></div>
+                                <p class="para">If a variable is not “defined” (assigned a value), trying to use it will give you an error:</p>
+                                <div class="code"><code>>>> n  # try to access an undefined variable<br>
+                    Traceback (most recent call last):<br>
+                      File "stdin", line 1, in module<br>
+                    NameError: name 'n' is not defined</code></div>
+                                <p class="para">There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:</p>
+                                <div class="code"><code>>>> 4 * 3.75 - 1<br>
+                        14.0</code></div>
+                                <p class="para">In interactive mode, the last printed expression is assigned to the variable _. This means that when you are using Python as a desk calculator, it is somewhat easier to continue calculations, for example:</p>
+                                <div class="code"><code>>>> tax = 12.5 / 100<br>
+                    >>> price = 100.50<br>
+                    >>> price * tax<br>
+                    12.5625<br>
+                    >>> price + _<br>
+                    113.0625<br>
+                    >>> round(_, 2)<br>
+                    113.06</code></div>
+                                <p class="para">This variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an independent local variable with the same name masking the built-in variable with its magic behavior.</p>
+                                <p class="para" id="last-para">In addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).</p>
+
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+                            <div class="col" id="controls">
+
+                                <h1>More Control Flow Tools</h1>
+
+                                <p class="para">Besides the while statement just introduced, Python uses the usual flow control statements known from other languages, with some twists.</p>
+                                <h2>if Statements</h2>
+                                <p class="para">Perhaps the most well-known statement type is the if statement. For example:</p>
+                                <div class="code"><code>>>> x = int(input("Please enter an integer: "))<br>
+                        Please enter an integer: 42<br>
+                        >>> if x < 0:<br>
+                        ...     x = 0<br>
+                        ...     print('Negative changed to zero')<br>
+                        ... elif x == 0:<br>
+                        ...     print('Zero')<br>
+                        ... elif x == 1:<br>
+                        ...     print('Single')<br>
+                        ... else:<br>
+                        ...     print('More')<br>
+                        ...<br>
+                        More</code></div>
+                                <p class="para">There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is useful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch
+                                    or case statements found in other languages.</p>
+                                <h2>for Statements</h2>
+
+                                <p class="para">The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both
+                                    the iteration step and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence. For example (no pun intended):</p>
+                                <div class="code"><code>>>> # Measure some strings:<br>
+                    ... words = ['cat', 'window', 'defenestrate']<br>
+                    >>> for w in words:<br>
+                    ...     print(w, len(w))<br>
+                    ...<br>
+                    cat 3<br>
+                    window 6<br>
+                    defenestrate 12</code></div><br>
+                                <p class="para">Code that modifies a collection while iterating over that same collection can be tricky to get right. Instead, it is usually more straight-forward to loop over a copy of the collection or to create a new collection:</p>
+                                <div class="code"><code># Strategy:  Iterate over a copy<br>
+                        for user, status in users.copy().items():<br>
+                            if status == 'inactive':<br>
+                                del users[user]<br>
+                                <br>
+                        # Strategy:  Create a new collection<br>
+                        active_users = {}<br>
+                        for user, status in users.items():<br>
+                            if status == 'active':<br>
+                                active_users[user] = status</code></div>
+
+                                <h2>The range() Function</h2>
+                                <p class="para">If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions:</p>
+                                <div class="code"><code>>>> for i in range(5):<br>
+                    ...     print(i)<br>
+                    ...<br>
+                    0<br>
+                    1<br>
+                    2<br>
+                    3<br>
+                    4</code></div>
+
+                                <p class="para">The given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for items of a sequence of length 10. It is possible to let the range start at another number, or to specify
+                                    a different increment (even negative; sometimes this is called the ‘step’):</p>
+                                <div class="code"><code>range(5, 10)<br>
+                        5, 6, 7, 8, 9<br>
+                        <br>
+                     range(0, 10, 3)<br>
+                        0, 3, 6, 9<br>
+                     
+                     range(-10, -100, -30)<br>
+                       -10, -40, -70</code></div>
+                                <p class="para">To iterate over the indices of a sequence, you can combine range() and len() as follows:</p>
+                                <div class="code" id="last-para"><code>>>> a = ['Mary', 'had', 'a', 'little', 'lamb']<br>
+                        >>> for i in range(len(a)):<br>
+                        ...     print(i, a[i])<br>
+                        ...<br>
+                        0 Mary<br>
+                        1 had<br>
+                        2 a<br>
+                        3 little<br>
+                        4 lamb</code></div>
+
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+                        <section id="content" class="main-section">
+                            <div class="col" id="python functions">
+
+                                <h1>python functions</h1>
+
+                                <h2> Defining Functions</h2>
+                                <p class="para">The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must
+                                    be indented.</p>
+
+                                <p class="para">The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or docstring. (More about docstrings can be found in the section Documentation Strings.)
+                                    There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so
+                                    make a habit of it.
+                                </p>
+                                <p class="para">The execution of a function introduces a new symbol table used for the local variables of the function. More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable
+                                    references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables and variables
+                                    of enclosing functions cannot be directly assigned a value within a function (unless, for global variables, named in a global statement, or, for variables of enclosing functions, named in a nonlocal statement), although
+                                    they may be referenced.
+                                </p>
+                                <p class="para">The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using call by value (where the value is always an object
+                                    reference, not the value of the object). 1 When a function calls another function, a new local symbol table is created for that call.</p>
+                                <p class="para">A function definition associates the function name with the function object in the current symbol table. The interpreter recognizes the object pointed to by that name as a user-defined function. Other names can also point
+                                    to that same function object and can also be used to access the function:</p>
+                                <div class="code"><code>>>> fib<br>
+                        function fib at 10042ed0<br>
+                        >>> f = fib<br>
+                        >>> f(100)<br>
+                        0 1 1 2 3 5 8 13 21 34 55 89</code></div>
+                                <p class="para">Coming from other languages, you might object that fib is not a function but a procedure since it doesn’t return a value. In fact, even functions without a return statement do return a value, albeit a rather boring one.
+                                    This value is called None (it’s a built-in name). Writing the value None is normally suppressed by the interpreter if it would be the only value written. You can see it if you really want to using print():</p>
+                                <div class="code"><code>>>> fib(0)<br>
+                        >>> print(fib(0))<br>
+                        None</code></div>
+                                <p class="para">It is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:</p>
+                                <div class="code"><code>>>> def fib2(n):  # return Fibonacci series up to n<br>
+                        ...     """Return a list containing the Fibonacci series up to n."""<br>
+                        ...     result = []<br>
+                        ...     a, b = 0, 1<br>
+                        ...     while a < n:<br>
+                        ...         result.append(a)    # see below<br>
+                        ...         a, b = b, a+b<br>
+                        ...     return result<br>
+                        ...<br>
+                        >>> f100 = fib2(100)    # call it<br>
+                        >>> f100                # write the result<br>
+                        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</code></div>
+                                <p class="para">This example, as usual, demonstrates some new Python features:</p>
+                                <ul id="last-para">
+                                    <li>The return statement returns with a value from a function. return without an expression argument returns None. Falling off the end of a function also returns None.</li>
+                                    <li>The statement result.append(a) calls a method of the list object result. A method is a function that ‘belongs’ to an object and is named obj.methodname, where obj is some object (this may be an expression), and methodname
+                                        is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. (It is possible to define your
+                                        own object types and methods, using classes, see Classes) The method append() shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to result
+                                        = result + [a], but more efficient.</li>
+                                </ul>
+
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+
+                            <div class="col" id="strings-and-string-manipulation">
+
+                                <h1>strings and string manipulation</h1>
+
+
+                                <p class="para">Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:
+                                </p>
+                                <div class="code"><code>>>> 'spam eggs'  # single quotes<br>
+                    'spam eggs'<br>
+                    >>> 'doesn\'t'  # use \' to escape the single quote...<br>
+                    "doesn't"<br>
+                    >>> "doesn't"  # ...or use double quotes instead<br>
+                    "doesn't"<br>
+                    >>> '"Yes," they said.'<br>
+                    '"Yes," they said.'<br>
+                    >>> "\"Yes,\" they said."<br>
+                    '"Yes," they said.'<br>
+                    >>> '"Isn\'t," they said.'<br>
+                    '"Isn\'t," they said.'</code></div>
+                                <p class="para">In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change),
+                                    the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print() function produces a more readable
+                                    output, by omitting the enclosing quotes and by printing escaped and special characters: </p>
+                                <div class="code"><code>>>> '"Isn\'t," they said.'<br>
+                    '"Isn\'t," they said.'<br>
+                    >>> print('"Isn\'t," they said.')<br>
+                    "Isn't," they said.<br>
+                    >>> s = 'First line.\nSecond line.'  # \n means newline<br>
+                    >>> s  # without print(), \n is included in the output<br>
+                    'First line.\nSecond line.'<br>
+                    >>> print(s)  # with print(), \n produces a new line<br>
+                    First line.<br>
+                    Second line.</code></div>
+                                <p class="para">If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote: </p>
+                                <div class="code"><code>>>> print('C:\some\name')  # here \n means newline!<br>
+                        C:\some<br>
+                        ame<br>
+                        >>> print(r'C:\some\name')  # note the r before the quote<br>
+                        C:\some\name</code></div>
+                                <p class="para"> String literals can span multiple lines. One way is using triple-quotes: """...""" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line.
+                                    The following example:
+                                </p>
+                                <div class="code"><code>print("""\
+                        Usage: thingy [OPTIONS]<br>
+                             -h                        Display this usage message<br>
+                             -H hostname               Hostname to connect to<br>
+                        """)</code></div>
+                                <p class="para">produces the following output (note that the initial newline is not included): </p>
+                                <div class="code"><code>Usage: thingy [OPTIONS]<br>
+                        -h                        Display this usage message<br>
+                        -H hostname               Hostname to connect to</code></div>
+                                <p class="para">Strings can be concatenated (glued together) with the + operator, and repeated with *: </p>
+                                <div class="code"><code>>>> # 3 times 'un', followed by 'ium'<br>
+                        >>> 3 * 'un' + 'ium'<br>
+                        'unununium'</code></div>
+                                <p class="para">Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated. </p>
+                                <div class="code"><code>>>> 'Py' 'thon'<br>
+                        'Python'</code></div>
+                                <p class="para">This feature is particularly useful when you want to break long strings: </p>
+                                <div class="code"><code>>>> text = ('Put several strings within parentheses '<br>
+                        ...         'to have them joined together.')<br>
+                        >>> text<br>
+                        'Put several strings within parentheses to have them joined together.'</code></div>
+                                <p class="para">This only works with two literals though, not with variables or expressions: </p>
+                                <div class="code"><code>>>> prefix = 'Py'<br>
+                        >>> prefix 'thon'  # can't concatenate a variable and a string literal<br>
+                          File "<stdin>", line 1<br>
+                            prefix 'thon'<br>
+                                        ^<br>
+                        SyntaxError: invalid syntax<br>
+                        >>> ('un' * 3) 'ium'<br>
+                          File "<stdin>", line 1<br>
+                            ('un' * 3) 'ium'<br>
+                                           ^<br>
+                        SyntaxError: invalid syntax</code></div>
+                                <p class="para">If you want to concatenate variables or a variable and a literal, use +: </p>
+                                <div class="code"><code>>>> prefix + 'thon'<br>
+                        'Python'</code></div>
+                                <p class="para">Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one: </p>
+                                <div class="code"><code>>>> word = 'Python'<br>
+                        >>> word[0]  # character in position 0<br>
+                        'P'<br>
+                        >>> word[5]  # character in position 5<br>
+                        'n'</code></div>
+                                <p class="para">Indices may also be negative numbers, to start counting from the right:</p>
+                                <div class="code"><code>>>> word[-1]  # last character<br>
+                        'n'<br>
+                        >>> word[-2]  # second-last character<br>
+                        'o'<br>
+                        >>> word[-6]<br>
+                        'P'</code></div>
+                                <p class="para">Note that since -0 is the same as 0, negative indices start from -1. </p>
+                                <p class="para">In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring: </p>
+                                <div class="code"><code>>>> word[0:2]  # characters from position 0 (included) to 2 (excluded)<br>
+                        'Py'<br>
+                        >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)<br>
+                        'tho'</code></div>
+                                <p class="para">Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s: </p>
+                                <div class="code"><code>>>> word[:2] + word[2:]<br>
+                        'Python'<br>
+                        >>> word[:4] + word[4:]<br>
+                        'Python'</code></div>
+                                <p class="para">Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.</p>
+                                <div class="code"><code>>>> word[:2]   # character from the beginning to position 2 (excluded)<br>
+                        'Py'<br>
+                        >>> word[4:]   # characters from position 4 (included) to the end<br>
+                        'on'<br>
+                        >>> word[-2:]  # characters from the second-last (included) to the end<br>
+                        'on'</code></div>
+                                <p class="para">Python strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string results in an error:</p>
+
+                                <div class="code"><code>>>> word[0] = 'J'<br>
+                        Traceback (most recent call last):<br>
+                          File "stdin", line 1, in module<br>
+                        TypeError: 'str' object does not support item assignment<br>
+                        >>> word[2:] = 'py'<br>
+                        Traceback (most recent call last):<br>
+                          File "stdin", line 1, in module<br>
+                        TypeError: 'str' object does not support item assignment<br>
+                        </code></div>
+                                <p class="para">If you need a different string, you should create a new one:</p>
+
+                                <div class="code"><code>>>> 'J' + word[1:]<br>
+                        'Jython'<br>
+                        >>> word[:2] + 'py'<br>
+                        'Pypy'</code></div>
+                                <p class="para">The built-in function len() returns the length of a string:</p>
+
+                                <div class="code" id="last-para"><code>>>> s = 'supercalifragilisticexpialidocious'<br>
+                        >>> len(s)<br>
+                        34</code></div>
+
+
+
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+
+                            <div class="col" id="coding-style">
+
+                                <h1>Intermezzo: Coding Style</h1>
+
+                                <p class="para">
+                                    Now that you are about to write longer, more complex pieces of Python, it is a good time to talk about coding style. Most languages can be written (or more concise, formatted) in different styles; some are more readable than others. Making it easy for
+                                    others to read your code is always a good idea, and adopting a nice coding style helps tremendously for that.
+                                </p>
+                                <p class="para">For Python, PEP 8 has emerged as the style guide that most projects adhere to; it promotes a very readable and eye-pleasing coding style. Every Python developer should read it at some point; here are the most important
+                                    points extracted for you:</p>
+                                <ul id="last-para">
+                                    <li>Use 4-space indentation, and no tabs.
+                                        <p class="para">4 spaces are a good compromise between small indentation (allows greater nesting depth) and large indentation (easier to read). Tabs introduce confusion, and are best left out.</p>
+                                    </li>
+                                    <li>Wrap lines so that they don’t exceed 79 characters.
+                                        <p class="para">This helps users with small displays and makes it possible to have several code files side-by-side on larger displays.</p>
+                                    </li>
+                                    <li>Use blank lines to separate functions and classes, and larger blocks of code inside functions.</li>
+                                    <li>When possible, put comments on a line of their own.</li>
+                                    <li>Use docstrings.</li>
+                                    <li>Use spaces around operators and after commas, but not directly inside bracketing constructs: a = f(1, 2) + g(3, 4).</li>
+                                    <li>Name your classes and functions consistently; the convention is to use UpperCamelCase for classes and lowercase_with_underscores for functions and methods. Always use self as the name for the first method argument (see
+                                        A First Look at Classes for more on classes and methods).</li>
+                                    <li>Don’t use fancy encodings if your code is meant to be used in international environments. Python’s default, UTF-8, or even plain ASCII work best in any case.</li>
+                                    <li>Likewise, don’t use non-ASCII characters in identifiers if there is only the slightest chance people speaking a different language will read or maintain the code.</li>
+
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="content" class="main-section">
+
+                            <div class="col" id="example programs">
+
+
+
+
+
+
+                                <h1>example programs</h1>
+
+                                <h4>hello python</h4>
+                                <div class="code"><code># Python 3: Simple output (with Unicode)<br>
+    >>> print("Hello, I'm Python!")<br>
+    Hello, I'm Python!<br>
+    <br>
+    # Input, assignment<br>
+    >>> name = input('What is your name?\n')<br>
+    >>> print('Hi, %s.' % name)<br>
+    What is your name?<br>
+    Python<br>
+    Hi, Python.</code></div>
+
+
+
+
+
+                                <h4>creating Fibonacci series</h4>
+                                <div class="code"><code># Python 3: Fibonacci series up to n<br>
+                        >>> def fib(n):<br>
+                        >>>     a, b = 0, 1<br>
+                        >>>     while a < n:<br>
+                        >>>         print(a, end=' ')<br>
+                        >>>         a, b = b, a+b<br>
+                        >>>     print()<br>
+                        >>> fib(1000)<br>
+                        0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</code></div>
+                            </div>
+
+                            <h4>for loop</h4>
+                            <div class="code"><code># For loop on a list<br>
+                    >>> numbers = [2, 4, 6, 8]<br>
+                    >>> product = 1<br>
+                    >>> for number in numbers:<br>
+                    ...    product = product * number<br>
+                    ... <br>
+                    >>> print('The product is:', product)<br>
+                    The product is: 384</code></div>
+
+                            <h4>list </h4>
+                            <div class="code" id="last-para"><code># Python 3: List comprehensions<br>
+                    >>> fruits = ['Banana', 'Apple', 'Lime']<br>
+                    >>> loud_fruits = [fruit.upper() for fruit in fruits]<br>
+                    >>> print(loud_fruits)<br>
+                    ['BANANA', 'APPLE', 'LIME']</code></div>
+
+                            <div class="col" id="references" style="margin-bottom: 20%;">
+                                <h1>references</h1>
+                                <p class="para">this documentation is made with a references of <a href="https://www.python.org/" target="blank">www.python.org</a></p>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <a href="#introduction"><i id="icon-arrow" class='fas fa-arrow-circle-up' style='font-size: 36px;
+                position: fixed;
+                bottom: 8%;
+                right: 3%;
+                color: #2e8b57d9;
+                padding: 0%; display: none;' ></i></a>
+
+            </div>
+
+
+
+    </main>
+
+</body>
+
+</html>
